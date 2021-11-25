@@ -1,4 +1,4 @@
-package week1;
+package week2;
 
 public class HelloWorld {
 
@@ -41,6 +41,9 @@ public class HelloWorld {
     // categories include String (described above), char (character), int (integer), float (decimal),
     // double (decimal), short (short), and boolean (true or false).
 
+    // These types of variables are known as primitives. The only exception to this is
+    // String. You will notice that primitive keywords will be bolded a specific color.
+
     // Today, we will be focusing on int, String, char, double, and boolean.
 
     // Let's assign a variable!
@@ -53,9 +56,8 @@ public class HelloWorld {
     // int 5mynumber = 5; this won't work
     // int .number = 2; this won't work either!
 
-    // They also cannot be a keyword in Java! For example, you can't
-    // define something like
-    // int int = 5;
+    // They also cannot be a keyword in Java! You can't
+    // define something like int int = 5;
 
     // for example, when defining a String, we can use.
 
@@ -75,6 +77,7 @@ public class HelloWorld {
     // Create a character, and paste it into Zoom chat!
 
     // char notWorkingCharacter = 'ad'; this won't work because 'ad' isn't a character!
+    // 'ad' is two characters combined. 'a' and 'd'. You can only define one character.
 
     // Let's try making an integer!
     // The integer must be a whole number, and must be between -2147483648 to 2147483647
@@ -100,14 +103,16 @@ public class HelloWorld {
     boolean myBooleanTwo = false;
     // boolean d = 0.5; // this won't work because boolean can be only assigned to "true" or "false"
 
+    // Create a boolean, and paste it into Zoom chat!
+
     // Again, notice that all the variables above are always [type] [name] = [value]
 
-    // Obviously, we have to use variables somehow. We can't just define them right?
+    // Obviously, we have to use variables somehow. We can't just define them and not use them right?
     // We can print out the variables
 
-    System.out.println(character);
-    System.out.println(integer);
-    System.out.println(decimal);
+    System.out.println(character); // print out the character
+    System.out.println(integer); // print out the integer
+    System.out.println(decimal); // print out the decimal
 
     // tip: control slash on selected code to make the whole code commented out. Commented out code is
     // not ran!
@@ -120,11 +125,15 @@ public class HelloWorld {
     // For example, if we defined it as an integer originally, the new value must also be an integer
 
     int before = 5; // define an integer called "before" with value 5
-    System.out.println(before);
-    before = 2; // assign it to a new value 2. Notice how that 2 is also an integer!.
-    System.out.println(before);
+    System.out.println(before); // print out the value before
+    before = 2; // assign it to a new value 2. Notice how that 2 is also an integer!. This is called reassigning.
+    System.out.println(before); // print out the new value after reassigning!
+
+    // before = 2.1; <-- this won't work
+    // before = false; <-- this won't work
 
     // We can't do before = 2.1 because 2.1 is a decimal, and we set the original value to be integer!
+
     // We can also assign variables to be other variables!
 
     before = integer; // we assign the current value of integer to before
@@ -142,8 +151,30 @@ public class HelloWorld {
     int result = 5 / 2; // we assign the value of "5 / 2" to our variable
     // think of "5 / 2" as our value
 
+    System.out.println(5 / 2);
+
     // If you thought it is 2.5, you are actually wrong. It is 2.
     // Does anyone want to guess why?
+
+    // The reason for this is because of what is called integer division. Because we set the
+    // type of variable to be an int (integer), the result of the division also must be an
+    // integer as well. By default, Java will round down to the nearest integer when performing
+    // integer division.
+
+    // Let's do some examples with integer division:
+
+    result = 5 / 3; // we can also assign math expressions to variables too. What will be the new value of result?
+    result = 6 / 2; // what about this?
+
+    // The opposite occurs when your value is negative. It rounds the result up instead.
+    // For instance, -5 / 2 -> -2
+
+    System.out.println(-5 / 2);
+
+    result = -1 / 2; // what about this?
+    result = -1 / -2; // what about this?
+
+
 
   }
 
