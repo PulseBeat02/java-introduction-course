@@ -34,6 +34,10 @@ public class HelloWorld {
     // Each character of Hello Class is H, E, L, L, O, " ", C, L, A, S, S, and when
     // combined forms the "Hello Class" String.
 
+    // ===========================
+    // VARIABLES
+    // ===========================
+
     // Now let's define some variables. What are variables?
     // Similar to math, variables are a symbol which represents a value
 
@@ -59,6 +63,10 @@ public class HelloWorld {
     // They also cannot be a keyword in Java! You can't
     // define something like int int = 5;
 
+    // ===========================
+    // STRING
+    // ===========================
+
     // for example, when defining a String, we can use.
 
     String str = "Hello World";
@@ -70,6 +78,10 @@ public class HelloWorld {
 
     // Create a String, and paste it into Zoom chat!
 
+    // ===========================
+    // CHARACTER
+    // ===========================
+
     char character = 'a';
     // Notice how the character has single quotes surrounding it. This is how you
     // define a character.
@@ -78,6 +90,10 @@ public class HelloWorld {
 
     // char notWorkingCharacter = 'ad'; this won't work because 'ad' isn't a character!
     // 'ad' is two characters combined. 'a' and 'd'. You can only define one character.
+
+    // ===========================
+    // INTEGER
+    // ===========================
 
     // Let's try making an integer!
     // The integer must be a whole number, and must be between -2147483648 to 2147483647
@@ -89,13 +105,26 @@ public class HelloWorld {
 
     // Create an integer, and paste it into Zoom chat!
 
-    // Let's say that we wanted to assign a double. A double is a decimal.
+    // ===========================
+    // DOUBLE
+    // ===========================
+
+    // Let's say that we wanted to assign a double. A double is a decimal, and it must be
+    // between 4.94065645841246544e-324d to 1.79769313486231570e+308d.
+
+    // The e represents scientific notation. For example, the number that comes after e is the
+    // power being raised. For example, 5e8 is equal to 5 * 10^8 (where ^ is power).
+
     double decimal = 5.5;
     // double g = -0.1;
     // double h = 5.00005;
     // double i = 5; this works because "5" is technically still a decimal! (converted to 5.0)
 
     // Create a decimal, and paste it into Zoom chat!
+
+    // ===========================
+    // BOOLEAN
+    // ===========================
 
     // Booleans are a data type which stores true and false.
     // This is similar to binary, where bits can be "on" or "off". 1 for on, 0 for off
@@ -116,6 +145,10 @@ public class HelloWorld {
 
     // tip: control slash on selected code to make the whole code commented out. Commented out code is
     // not ran!
+
+    // ===========================
+    // RE-ASSIGNING VARIABLES
+    // ===========================
 
     // In programming, variables are called variables because their value can vary, and change.
     // Suppose we want to change the variable. How do we do that?
@@ -147,7 +180,54 @@ public class HelloWorld {
     // double whatGoesHereTwo = ?; what can go here?
     // boolean whatAboutHere = ?; what about here?
 
-    // math operations can also be applied onto our variables. There is a twist, however.
+    // ===========================
+    // MATH OPERATIONS
+    // ===========================
+
+    // math operations can also be applied onto our variables.
+
+    // When using math operations in Java, the numbers that we are
+    // using MUST be the same as the type of variable we are assigning to.
+
+    // Math operations can only be applied to numerical primitives. So this means
+    // int, double, float, and short.
+
+    // For example:
+    int example = 2 + 2;
+    // ^          ^   ^
+    // integer    int int
+
+    // Example is assigned to be type "integer". And our operations are ints only.
+    // Something like 'int example = 2.5 * 2.5;' wouldn't work.
+
+    // The following operators are for each math operation:
+
+    // addition -> +
+    // subtraction -> -
+    // multiplication -> *
+    // division -> /
+
+    int addition = 5 + 5;
+    double addition2 = 2.5 + 2.5;
+    System.out.println(addition); // 10
+
+    // what is addition if we assign it to be 5 + 5 + 5 + 5?
+    // 20
+
+    int subtract = 5 - 3;
+    System.out.println(subtract); // 2
+
+    // what is subtract if we assign it to be 5 - 5 - 5 - 5?
+    // -10
+
+    int multiplication = 5 * 5;
+    System.out.println(multiplication); // 25
+
+    // what is multiplication if we assign it to be 5 * 5 * 5 * 5?
+    // 625
+
+    // What about division?
+
     int result = 5 / 2; // we assign the value of "5 / 2" to our variable
     // think of "5 / 2" as our value
 
@@ -159,21 +239,39 @@ public class HelloWorld {
     // The reason for this is because of what is called integer division. Because we set the
     // type of variable to be an int (integer), the result of the division also must be an
     // integer as well. By default, Java will round down to the nearest integer when performing
-    // integer division.
+    // integer division IF your result is positive, and the opposite IF your result is negative.
 
     // Let's do some examples with integer division:
 
     result = 5 / 3; // we can also assign math expressions to variables too. What will be the new value of result?
     result = 6 / 2; // what about this?
 
-    // The opposite occurs when your value is negative. It rounds the result up instead.
-    // For instance, -5 / 2 -> -2
-
     System.out.println(-5 / 2);
 
     result = -1 / 2; // what about this?
     result = -1 / -2; // what about this?
 
+
+    // ===========================
+    // CHAINING MATH OPERATIONS
+    // ===========================
+
+    result = 5 * (5 + 2) - 3; // what about this?
+    System.out.println(result);
+
+    // if you said 32, you would be correct. Java prioritizes parenthesis first, then division/multiplication, and finally addition/subtraction.
+
+    result = 5 / 2 + 3; // what about this?
+    System.out.println(result);
+
+    // be careful here. The division goes first, however, we must remember that since the result of 5 / 2 is positive, it rounds down! So that means
+    // that 5 / 2 is equivalent to 2. Then we add the 3 to it to get our answer -- 5. Let's try some more complex expressions.
+
+    result = 5 * 5 * 5 + (2 + 3 / 2);
+    // 3 / 2 -> 1
+    // 2 + 1 -> 3
+    // 5 * 5 * 5 -> 125
+    // 125 + 3 -> 128
 
 
   }
