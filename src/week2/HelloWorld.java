@@ -238,8 +238,7 @@ public class HelloWorld {
 
     // The reason for this is because of what is called integer division. Because we set the
     // type of variable to be an int (integer), the result of the division also must be an
-    // integer as well. By default, Java will round down to the nearest integer when performing
-    // integer division IF your result is positive, and the opposite IF your result is negative.
+    // integer as well. By default, Java will completely trim off the decimal portion.
 
     // Let's do some examples with integer division:
 
@@ -273,7 +272,31 @@ public class HelloWorld {
     // 5 * 5 * 5 -> 125
     // 125 + 3 -> 128
 
+    // Now let's try with doubles!
 
+    double aDecimal = 5 / 2; // what will this print out?
+    System.out.println(aDecimal);
+
+    // If you guessed 2.5, you are actually wrong. The answer is 2.0 why?
+
+    // The main reason behind this is that 5 and 2 are integers. Because 5 and 2 are both integers,
+    // the operation "5 / 2", is considered integer division. This means we are assigning the value
+    // of the integer division to our decimal. Because 5 / 2 results in 2, the decimal value will be
+    // 2.0 (it appends the extra decimal point to our value).
+
+    // To fix this, we add a "d" to the end to specify we want a decimal value.
+    double bDecimal = 5d / 2; // or 5 / 2d
+
+    System.out.println(bDecimal); // this prints out 2.5
+
+    // It turns out we can specify letters at the end of different numbers if we want different values
+    // nothing -> integer
+    // d -> double
+    // f -> float
+    // etc
+
+    // Order of operations still exist for doubles. The concepts above can be applied for any specific
+    // primitive which can perform mathematical operations.
   }
 
 }
