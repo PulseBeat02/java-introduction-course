@@ -102,7 +102,7 @@ public class HelloWorld {
 
     // In english, this would be: "If I work, then I can get money, or else I can't be Bill Gates."
     // Notice how we have the IF X, THEN Y part, but then we also added the OR ELSE Z part to
-    // represent will what happen if the condition (which is X) isn't true.
+    // represent what will happen if the condition (which is X) isn't true.
 
     // In this case, the X would be "I work", the Y would be "I can get money", and the Z (otherwise)
     // would be the "I can't be Bill Gates."
@@ -220,14 +220,14 @@ public class HelloWorld {
 
     int num = 21;
 
-    if (num >= 0) { // check that it's positive
+    if (num > 0) { // check that it's positive
       if (num % 2 == 0) { // check that it's a multiple of 2 (we can nest conditionals!)
         System.out.println("The number is both positive and even");
       }
     }
 
     // If we use the AND operator, we can do this instead
-    if (num >= 0 && num % 2 == 0) { // if the number is positive AND even
+    if (num > 0 && num % 2 == 0) { // if the number is positive AND even
       System.out.println("The number is both positive and even");
     }
 
@@ -240,7 +240,7 @@ public class HelloWorld {
     // OR OPERATOR (||)
 
     // For the OR operator, it is essentially the opposite of the AND operator. We only need
-    // 1 out of the 2 conditions to be satisfied for the whole thing to return true.
+    // 1 out of the 2 conditions to be satisfied for the whole statement to return true.
 
     // For example, let's say we wanted to check if a number is divisible by 2 OR 3 with normal
     // logic.
