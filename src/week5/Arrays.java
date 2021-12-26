@@ -49,7 +49,7 @@ public class Arrays {
       a -= 5; // a -> -2
     }
 
-    System.out.println();
+    System.out.println(a);
 
     // ARRAYS
 
@@ -78,8 +78,8 @@ public class Arrays {
     // [ 4, 3, 6 ]
     // [ 4, 1, 9 ]
 
-    // The following matrix above is a 4 x 4 matrix because it is 4 units wide and 4 units long.
-    // If we were to represent the data above in an array, we would also call it a 4 by 4 array.
+    // The following matrix above is a 3 x 4 matrix because it is 4 units wide and 4 units long.
+    // If we were to represent the data above in an array, we would also call it a 3 by 4 array.
     // Because we both have a width AND height, this is an example of a 2D array.
 
     // What if we only want a 1D array, or like just a simple list going straight of just numbers?
@@ -152,6 +152,13 @@ public class Arrays {
     // For example, we defined the array to be a double, so we must also
     // assign any value in the array as a double.
 
+    // If we don't assign anything in the array, it will go to its "fallback" value,
+    // which depends on the data type.
+
+    // boolean -> false
+    // int -> 0
+    // so on
+
     doubleArray[0] = 2.0;
     // ^        ^     ^
     // array  index  new value
@@ -171,7 +178,7 @@ public class Arrays {
     //  index 0          index 1
 
     // The "second element" of our array is actually at index 1!
-    // In other words, the nth element of our array is always going to be at index n - 1
+    // In other words, the nth element of any array is always going to be at index n - 1
 
     // What if we try assigning something with a length higher?
 
@@ -247,7 +254,7 @@ public class Arrays {
     // the first, check if they are equal.
 
     if (doubleArray[1] == doubleArray[0]) {
-      System.out.println("The second and first elements of the array are equal!");
+      System.out.println("The first and second elements of the array are equal!");
     }
 
     // Now, suppose we want to add the value of the second element of the array to
