@@ -49,8 +49,8 @@ public class ForLoops {
 
     // That's when loops come in. What is a loop?
     // A loop is a block code which will continue to repeat until a certain condition is met.
-    // There are many types of loops such as for loops, while loops, do-while loops, etc. But
-    // today we are only focusing on for loops.
+    // There are many types of loops such as for loops, for-each loops, while loops, do-while loops,
+    // etc. But today we are only focusing on for loops.
 
     // In Java, we have two types of for loops. We have the "enhanced-for" loop (or some may call
     // the for each loop).
