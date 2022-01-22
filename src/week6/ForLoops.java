@@ -25,7 +25,7 @@ public class ForLoops {
 
     // How do we check if the 3rd element is greater than the 1st for the array?
     if (array[2] > array[0]) {
-      System.out.println("The 3rd element is greater than the first element!");
+      System.out.println("The 3rd element is greater than the 1st element!");
     }
 
     // How do we increment the second element by 1
@@ -99,7 +99,7 @@ public class ForLoops {
     // anything we want. As long as it follows the same type of the array (which in
     // this case is int[], notice how in the example we defined it as **int** element)
 
-    // Give this array here, I want you to print each value out but divided by 2
+    // Given this array here, I want you to print each value out but divided by 2
     int[] mystery = {5, 4, 3, 2, 1};
     for (int element : mystery) {
       System.out.println(element / 2);
@@ -135,7 +135,7 @@ public class ForLoops {
     // iteration (or updation) -> this is usually the part where we update our variable. There are
     // obviously exceptions to this (for example, we can update it inside our loop logic too), but
     // in this case we see i++. We are "updating" the value of i, and incrementing it by 1. This is
-    // done AFTER the block of code is executed. The other ones are done before.
+    // done AFTER the block of code is executed.
 
     // Putting this together, we can write out the logic for the loop we have above.
 

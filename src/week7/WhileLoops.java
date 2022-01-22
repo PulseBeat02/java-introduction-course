@@ -79,9 +79,9 @@ public class WhileLoops {
     // "Stop"
 
     // Now copy and paste the following method below:
-    // public static int dice() {
-    //   return new Random().nextInt(6) + 1;
-    // }
+//     public static int dice() {
+//       return new Random().nextInt(6) + 1;
+//     }
 
     // I want you to create a while loop which will loop until the dice returns
     // a 6. To call the method, you just call dice() like so: int roll = dice();
