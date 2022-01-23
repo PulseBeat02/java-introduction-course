@@ -118,7 +118,7 @@ public class LoopsReview {
     }
 
     // Write a for loop that adds all the elements inside the array together!
-    // Hint: create a number to keep track of the sum
+    // Hint: create a variable to keep track of the sum
     int sum = 0; // sum variable
     for (int number : array) { // for each element
       sum += number; // add to the sum
