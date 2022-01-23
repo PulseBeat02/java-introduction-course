@@ -15,7 +15,7 @@ public class LoopsReview {
     strArray[0] = "Dog";
 
     // How do I print out the element at the first index (of strArray)?
-    System.out.println(strArray);
+    System.out.println(strArray[0]);
 
 
     // Define an integer array with values {1, 2, 3, 5} called "numbers".
