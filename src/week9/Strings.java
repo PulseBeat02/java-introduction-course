@@ -23,7 +23,7 @@ public class Strings {
     // \n -> Inserts a new line
     // \r -> Inserts a carriage return
     // \" -> Inserts a double quote
-    // \\ -> Inserts a back slash
+    // \\ -> Inserts a backslash
 
     // The correct way to print "Double Quotes" (with the quotes), would be:
     System.out.println("\"Double Quotes\"");
@@ -33,9 +33,8 @@ public class Strings {
     // Print a new line
     System.out.println("First Line \n New Line!");
 
-    // Try printing \Single Quotes\ (with the backslashes):
-    System.out.println("\\Single Quotes\\");
-
+    // Try printing \Backslashes\ (with the backslashes):
+    System.out.println("\\Backslahes\\");
 
 
     // STRING CONCATENATION
@@ -49,18 +48,18 @@ public class Strings {
     int apples = 5;
     System.out.println("I have " + apples + " apples!");
 
-    // Notice how that I have two plus signs. I have a plus sign between the apples variable. This
+    // Notice how that I have two plus signs. I have a plus sign before and after the apples variable. This
     // operator applies for any primitive or class. For example, if I wanted to print the bananas
     // variable here:
     double bananas = 10.5;
     System.out.println("I have " + bananas + " bananas!");
 
-    // When performing operations on the variable. You should always use () so Java will know what
+    // When performing operations on the variable, you should always use () so Java will know what
     // it should concatenate and what it should calculate. For example:
 
-    System.out.println("5 divided by 2 is equal to " + 5 + 2);
+    System.out.println("5 plus 2 is equal to " + 5 + 2);
     // AND
-    System.out.println("5 divided by 2 is equal to " + (5 + 2));
+    System.out.println("5 plus 2 is equal to " + (5 + 2));
 
     // DO NOT GIVE THE SAME RESULT!
 
@@ -72,7 +71,7 @@ public class Strings {
 
     // Do the same thing now, but print 3 less than ducks. In other words, print out:
     // Taking away 3 ducks from my total gives me [# - 3] ducks.
-    System.out.println("Taking away 3 ducks from my total gives me " + (ducks - 3) + "ducks.");
+    System.out.println("Taking away 3 ducks from my total gives me " + (ducks - 3) + " ducks.");
 
 
 
@@ -82,8 +81,9 @@ public class Strings {
     // you would do so?
 
     String first = "Hello World";
-    String second = "Hello World";
-    System.out.println(first == second); // this actually prints false
+    String second = "Hello Worl";
+    second = second + "d";
+    System.out.println(first == second);
 
     // The reason why that prints false is because String is a class. In Java,
     // there are mainly two types of categories. Classes and primitives. Primitives
@@ -97,7 +97,7 @@ public class Strings {
     System.out.println(first.equals(second));
 
     // We append .equals on our String and pass in "second" as our argument. This returns
-    // a boolean which says if it the Strings are equal or not.
+    // a boolean which says if the Strings are equal or not.
 
     // Print out whether the Strings are equal or not
     String compareMeOne = "El Mundo";
@@ -108,7 +108,7 @@ public class Strings {
 
     // Suppose we had two boxes. Think of the apples as the String, and the box as the memory
     // Box #1 one has an apple
-    // Box #2 has an apple.
+    // Box #2 has an apple
 
     // Using .equals will compare the contents of both of these boxes. In this case, it would
     // return true, because both boxes have an apple.
@@ -129,7 +129,8 @@ public class Strings {
 
     // SECOND PART:
 //    String s1 = "abc"; // we assign s1 to be "abc"
-//    String s2 = "abc"; // we assign s2 to be "abc"
+//    String s2 = "ab"; // we assign s2 to be "abc"
+//    s2 += "c";
 //    System.out.println(s1 == s2); // This returns false. Even though s1 and s2 have the same content,
 //    // they are being stored in different places in the memory.
 //    System.out.println(s1.equals("s2")); // This returns true. s1 and s2 have the same content (they
@@ -145,7 +146,8 @@ public class Strings {
 
     // PROBLEMS
     String str1 = "a";
-    String str2 = "a";
+    String str2 = "";
+    str2 += "a";
     System.out.println(str1 == str2); // what should this print out?
 
     str2 = str1;
@@ -157,7 +159,6 @@ public class Strings {
     int a = 5;
     int b = a;
     System.out.println(a == b); // what should this print out?
-
 
 
     // USEFUL STRING METHODS
