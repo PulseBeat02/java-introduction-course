@@ -64,7 +64,7 @@ public class Strings {
     System.out.println(first == second); // prints false
 
     // Why does it print false?
-    // The reason why it prints false is because of String interning. This is
+    // The reason why it prints true is because of String interning. This is
     // an important reason why we cannot compare these String's using ==. It
     // won't always work.
 
@@ -90,7 +90,7 @@ public class Strings {
     // Now suppose we wanted to compare the actual references of two objects
     // rather than the content. For example:
 
-    // "Hello" (first String)     ----------> Memory Address #1
+    // "Hello" (first String)    ----------> Memory Address #1
     // "Hello" (second String)   ----------> Memory Address #2
 
     // And you want to compare to see if the memory address of the first String is the same
