@@ -67,7 +67,7 @@ public class Strings {
     // Replace every "eat" in "dogeatbone dogeatbone" with "fetch"
     System.out.println("dogeatbone dogeatbone".replace("eat", "fetch"));
 
-    // Replace every '\\' "\\My\\name\\is\\Bob" with ' '
+    // Replace every '\\' in "\\My\\name\\is\\Bob" with ' '
     System.out.println("\\My\\name\\is\\Bob".replace('\\', ' '));
 
 
