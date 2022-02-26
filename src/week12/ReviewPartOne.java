@@ -153,7 +153,7 @@ public class ReviewPartOne {
 
     // Write a condition to check the airQuality. Print out the rating based on
     // the air quality.
-    if (airQuality <= 20) {
+    if (airQuality >= 1 && airQuality <= 20) {
       System.out.println("Excellent");
     } else if (airQuality <= 40) {
       System.out.println("Good");
