@@ -220,9 +220,9 @@ public class ReviewPartOne {
     // What will this give us?
     System.out.println(array[5]);
 
-    // How do we check if the value at index 3 is greater than 2?
+    // How do we check if the value of the element at index 3 is greater than the value of the element at index 2?
     if (array[3] > array[2]) {
-      System.out.println("The value at index 3 is greater than 2");
+      System.out.println("The value of the element at index 3 is greater than the value of the element at 2");
     }
 
     // How do we add the value of the third element of the array to the second element?

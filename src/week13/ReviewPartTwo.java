@@ -41,9 +41,9 @@ public class ReviewPartTwo {
     // What will this give us?
     // System.out.println(array[5]);
 
-    // How do we check if the value at index 3 is greater than 2?
+    // How do we check if the value of the element at index 3 is greater than the value of the element at index 2?
     if (array[3] > array[2]) {
-      System.out.println("The value at index 3 is greater than 2");
+      System.out.println("The value of the element at index 3 is greater than the value of the element at index 2");
     }
 
     // How do we add the value of the third element of the array to the second element?
@@ -51,6 +51,7 @@ public class ReviewPartTwo {
 
     // How do we find the length of an array?
     int length = array.length;
+
 
     // WEEK #6 - For Loops
 
@@ -89,7 +90,7 @@ public class ReviewPartTwo {
     }
     System.out.println(sum);
 
-    // Write a for loop that multiples all the numbers of demo2 together. Use compound operators.
+    // Write a for loop that multiplies all the elements inside the array demo2 together. Use compound operators.
     int product = 1;
     for (int element : demo2) {
       product *= element;
@@ -155,7 +156,8 @@ public class ReviewPartTwo {
       problemSum += problem[problem.length - i - 1];
     }
 
-    // Week #7 - While Loops
+
+    // WEEK #7 - While Loops
 
     // There are two types of while loops. The do-while loop and the typical while
     // loop. What is the difference between a while loop and a do-while loop?
@@ -169,8 +171,8 @@ public class ReviewPartTwo {
 //      return new Random().nextInt(6) + 1;
 //    }
 
-    int j = 0; // assign a variable i to be 0
-    while (j < 5) { // while i is less than 5
+    int j = 0; // assign a variable j to be 0
+    while (j < 5) { // while j is less than 5
       System.out.println(j); // print it out
       j++; // increment it by one
     }
@@ -181,9 +183,9 @@ public class ReviewPartTwo {
       roll = dice();
     }
 
-    // Write a while loop that continues to roll the dice until it is less than 5
+    // Write a while loop that continues to roll the dice until it rolls something less than 6
     int roll2 = dice();
-    while (roll2 >= 5) {
+    while (roll2 >= 6) {
       roll2 = dice();
     }
 
