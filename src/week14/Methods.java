@@ -101,7 +101,7 @@ public class Methods {
   // (2)
   static double averageMean(double a, double b, double c) {
     double sum = a + b + c;
-    return sum / 3;
+    return sum / 3d;
   }
 
   // (3)
@@ -234,10 +234,11 @@ public class Methods {
     System.out.println(vararg[0]);
   }
 
+
   // MODIFIERS
 
   // Methods can also have special modifiers such as final, static, volatile, etc. You don't need to know
-  // what each of these modifiers do at the time being but they are placed before the return type. For
+  // what each of these modifiers do at the time being, but they are placed before the return type. For
   // example:
   static void exampleStaticMethod() {
     System.out.println(1 + 2);
