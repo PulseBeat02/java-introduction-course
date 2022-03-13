@@ -1,6 +1,6 @@
 package week15;
 
-public class Methods {
+public class Classes {
 
   public static void main(String[] args) {
 
