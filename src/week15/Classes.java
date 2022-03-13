@@ -32,7 +32,6 @@ public class Classes {
     boolean result = amGM(0.1, 0.5, 20);
     System.out.println(result);
 
-
     // CLASSES
 
     // What is a class in a programming language?
@@ -100,7 +99,6 @@ public class Classes {
     int number = storer.getNumber(); // Gets the number inside NumberStorer
     System.out.println(number); // Prints the number out
 
-
     // Let's divide each part of the class:
 
 //    class NumberStorer {                <---- We are defining a class with the name "NumberStorer"
@@ -120,66 +118,65 @@ public class Classes {
 //      }
 //    }
 
-      // Notice how that anywhere in the class, we are able to use the "number" variable. You may
-      // be asking a lot of questions, however.
+    // Notice how that anywhere in the class, we are able to use the "number" variable. You may
+    // be asking a lot of questions, however.
 
-      // What is the "this" keyword?
-      // This "this" keyword is a keyword that refers to its own object. Similar to self in Python,
-      // it allows you to access all variables and methods within that class. For example, using
-      // "this.number", will access the number variable inside the NumberStorer class. This isn't
-      // only for variables, but for methods too. Using "this.getNumber()" will return the value
-      // of the number. This keyword only works however if you are within the class. For example,
-      // in this case, you can only use this.number if you are using it inside the NumberStorer class.
-      // Otherwise, you cannot.
+    // What is the "this" keyword?
+    // This "this" keyword is a keyword that refers to its own object. Similar to self in Python,
+    // it allows you to access all variables and methods within that class. For example, using
+    // "this.number", will access the number variable inside the NumberStorer class. This isn't
+    // only for variables, but for methods too. Using "this.getNumber()" will return the value
+    // of the number. This keyword only works however if you are within the class. For example,
+    // in this case, you can only use this.number if you are using it inside the NumberStorer class.
+    // Otherwise, you cannot.
 
-      // Methods in a class?
-      // Yes, absolutely. Classes can have methods, and they follow the same exact format as we
-      // described last week.
+    // Methods in a class?
+    // Yes, absolutely. Classes can have methods, and they follow the same exact format as we
+    // described last week.
 
-      // What is a constructor?
-      // Similar to init in Python, a constructor is a type of method that is ALWAYS called first
-      // after we call "new" on it. We can pass arguments to it if we want to. We, however,
-      // cannot return anything from the constructor. The default format for it is [class name](arguments).
+    // What is a constructor?
+    // Similar to init in Python, a constructor is a type of method that is ALWAYS called first
+    // after we call "new" on it. We can pass arguments to it if we want to. We, however,
+    // cannot return anything from the constructor. The default format for it is [class name](arguments).
 
-      // For example, for the NumberStorer class above, we have NumberStorer(), and we don't have
-      // anything inside the parenthesis because we aren't doing anything with the arguments.
+    // For example, for the NumberStorer class above, we have NumberStorer(), and we don't have
+    // anything inside the parenthesis because we aren't doing anything with the arguments.
 
-      // Usually in the constructor, we assign any necessary variables inside. For example, we can
-      // use "this.variable" here, and use "this.variable = ..." to assign it from some argument.
+    // Usually in the constructor, we assign any necessary variables inside. For example, we can
+    // use "this.variable" here, and use "this.variable = ..." to assign it from some argument.
 
-      // As an example, take a look at the following class which stores a coordinate.
+    // As an example, take a look at the following class which stores a coordinate.
 
-      class Coordinate {
+    class Coordinate {
 
-        int x; // "x" integer variable
-        int y; // "y" integer variable
+      int x; // "x" integer variable
+      int y; // "y" integer variable
 
-        Coordinate(int xCoord, int yCoord) { // Constructor here. We pass in two variables "x" and "y"
-          this.x = xCoord; // "this.x" to refer to our x variable
-          this.y = yCoord; // "this.y" to refer to our y variable
-        }
-
-        int getX() { // Method to return the x coordinate
-          return x;
-        }
-
-        int getY() { // Method to return the y coordinate
-          return y;
-        }
+      Coordinate(int xCoord, int yCoord) { // Constructor here. We pass in two variables "x" and "y"
+        this.x = xCoord; // "this.x" to refer to our x variable
+        this.y = yCoord; // "this.y" to refer to our y variable
       }
 
+      int getX() { // Method to return the x coordinate
+        return x;
+      }
 
-      // Now let's create our own class step by step!
+      int getY() { // Method to return the y coordinate
+        return y;
+      }
+    }
 
-      // Let's create a class that stores three numbers. The class will be named "Triple".
+    // Now let's create our own class step by step!
 
-      // Step #1: I want you to define the class header.
+    // Let's create a class that stores three numbers. The class will be named "Triple".
+
+    // Step #1: I want you to define the class header.
 
 //      class Triple {
 //      }
 
-      // Step #2: Define three variables inside the class. Name these variables a, b, and c, and
-      // make them integers.
+    // Step #2: Define three variables inside the class. Name these variables a, b, and c, and
+    // make them integers.
 
 //      class Triple {
 //        int a;
@@ -187,9 +184,9 @@ public class Classes {
 //        int c;
 //      }
 
-      // Step #3: Add a constructor for the class. Pass three arguments, each being an integer.
-      // Name them "a", "b", and "c". Inside the constructor method, use "this.a", "this.b", etc to
-      // assign the variables.
+    // Step #3: Add a constructor for the class. Pass three arguments, each being an integer.
+    // Name them "a", "b", and "c". Inside the constructor method, use "this.a", "this.b", etc to
+    // assign the variables.
 
 //      class Triple {
 //
@@ -204,34 +201,38 @@ public class Classes {
 //        }
 //      }
 
-      // Step #4: Add three methods for returning the value of a, b, and c. Name these methods
-      // "getA", "getB", and "getC". They should each return an integer.
+    // Step #4: Add three methods for returning the value of a, b, and c. Name these methods
+    // "getA", "getB", and "getC". They should each return an integer.
 
-      class Triple {
+    class Triple {
 
-        int a;
-        int b;
-        int c;
+      int a;
+      int b;
+      int c;
 
-        Triple(int a, int b, int c) {
-          this.a = a;
-          this.b = b;
-          this.c = c;
-        }
-
-        int getA() {
-          return this.a;
-        }
-
-        int getB() {
-          return this.b;
-        }
-
-        int getC() {
-          return this.c;
-        }
+      Triple(int a, int b, int c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
       }
 
+      int getA() {
+        return this.a;
+      }
+
+      int getB() {
+        return this.b;
+      }
+
+      int getC() {
+        return this.c;
+      }
+    }
+
+    Triple triple = new Triple(0, 1, 2);
+    System.out.println(triple.getA());
+    System.out.println(triple.getB());
+    System.out.println(triple.getC());
 
   }
 
