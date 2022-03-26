@@ -212,7 +212,7 @@ public class Classes {
 
     // As we get closer to hopefully a project, observe the following code:
 
-    JLabel label = new JLabel("Image");
+    JLabel label = new JLabel("Label");
     label.setText("Welcome to Programming Class!");
     label.setVisible(true);
 
