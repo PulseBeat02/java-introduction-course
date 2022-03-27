@@ -230,7 +230,7 @@ public class Collections {
     // PROBLEMS
 
     // (1) If you created a TreeSet with the values 91, 93, 87, 67, 98, and 85, what will be the
-    // order of the set?
+    // order of the elements inside the set?
 
     // (2) What are some basic differences between a List and a Set?
 
