@@ -61,7 +61,7 @@ public class Collections {
     List<Integer> list = new ArrayList<>();
 
     // The format is as follows:
-    // List<[type]]> [name] = new ArrayList<>();
+    // List<[type]> [name] = new ArrayList<>();
 
     // You must substitute type with a class. In this case, this can be Integer, Double, Float, etc.
     // However, this CANNOT be substituted with a primitive.
@@ -107,7 +107,7 @@ public class Collections {
     // Sets are different. Unlike List, Set cannot contain any duplicate elements. A Set also does not
     // maintain order. However, you can add and remove as many elements as you would like.
 
-    // The most common types of Set in Java are HashSet and TreeSet.
+    // The most common types of Sets in Java are HashSet and TreeSet.
 
 
     // HASHSET
@@ -118,14 +118,14 @@ public class Collections {
     Set<Boolean> set = new HashSet<>();
 
     // The format is as follows:
-    // Set<[type]]> [name] = new HashSet<>();
+    // Set<[type]> [name] = new HashSet<>();
 
     // Adding to a set:
     set.add(true);
     set.add(false);
     System.out.println(set);
 
-    // Because a Set does not have order, you cannot remove an element from an index. If you want
+    // Because a Set does not have order, you cannot remove an element based on index. If you want
     // to remove an element, you have to remove the actual object from the element. For example:
     set.remove(true);
     System.out.println(set);
@@ -151,6 +151,8 @@ public class Collections {
     // To define an Integer TreeSet
     Set<Integer> treeset = new TreeSet<>();
 
+    // Set<[type]> [name] = new TreeSet<>();
+
     // Adding and removing use all the same methods above. The only difference however is that
     // a TreeSet stores the elements in sorted order rather than a hashed order. For example:
 
@@ -172,7 +174,7 @@ public class Collections {
     // MAPS
 
     // Maps are a way to store data key to value. This is similar to dictionary in Python, where
-    // you have a key and value. All keys must be unique, however, values can be duplicated. For
+    // you have a key and a value. All keys must be unique; however, values can be duplicated. For
     // example:
 
     // [1] -> ["hi"]
@@ -190,7 +192,7 @@ public class Collections {
     Map<Integer, String> map = new HashMap<>();
 
     // The format is as follows:
-    // Map<[key type], [value type]]> [name] = new HashMap<>();
+    // Map<[key type], [value type]> [name] = new HashMap<>();
 
     // To add to a map, you use the put method and specify the key and value.
     map.put(1, "hi"); // key is the first argument, value is the second argument. {1=hi}
@@ -222,7 +224,7 @@ public class Collections {
     Map<Integer, String> numTreeMap = new TreeMap<>();
 
     // The format is as follows:
-    // Map<[key type], [value type]]> [name] = new TreeMap<>();
+    // Map<[key type], [value type]> [name] = new TreeMap<>();
 
 
     // PROBLEMS
