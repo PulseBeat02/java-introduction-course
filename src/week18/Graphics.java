@@ -92,7 +92,7 @@ public class Graphics {
     // JLabel
 
     // JLabel's are a way to display text inside our window. They are basically labels that you
-    // can use to display certain labels.
+    // can use to display certain information.
 
     // We can add JLabel into our JFrame. We define a new JLabel as so:
     JLabel label = new JLabel();
