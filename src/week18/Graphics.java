@@ -1,6 +1,5 @@
 package week18;
 
-import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -10,7 +9,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import javax.imageio.ImageIO;
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
@@ -18,8 +16,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.border.Border;
-import javax.swing.border.EtchedBorder;
 
 public class Graphics {
 
@@ -96,7 +92,7 @@ public class Graphics {
     // JLabel
 
     // JLabel's are a way to display text inside our window. They are basically labels that you
-    // can use to display certain labels.
+    // can use to display certain information.
 
     // We can add JLabel into our JFrame. We define a new JLabel as so:
     JLabel label = new JLabel();
@@ -214,9 +210,9 @@ public class Graphics {
     // (2) Create a JLabel that adds an image of your choice from a URL. Set it to be visible
     // and add it to the JFrame.
 
-    URL imageUrl = new URL("");
+    URL imageUrl = new URL("https://icon-library.com/images/java-icon-png/java-icon-png-15.jpg");
     BufferedImage buffered = ImageIO.read(imageUrl);
-    ImageIcon imageIcon = new ImageIcon(bufferedImage);
+    ImageIcon imageIcon = new ImageIcon(buffered);
 
     JLabel imageLabel = new JLabel();
     imageLabel.setIcon(imageIcon);
