@@ -17,7 +17,7 @@ public class FinalReview {
     number %= 9;
     System.out.println(number);
 
-    // (2) Add and subtract 1 from the number using the special operator. (1m)
+    // (2) Add and subtract 1 from the number using the incremental/decremental operator. (1m)
     number++;
     number--;
 
