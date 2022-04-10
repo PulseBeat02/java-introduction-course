@@ -43,14 +43,14 @@ public class FinalReview {
     // (6) Create an int[] with the name "array" with size 5. Set the value at the first index to be
     // 2. Set the value of the third index to be 4. (2m)
     int[] array = new int[5];
-    array[0] = 2;
+    array[1] = 2;
     array[3] = 4;
 
     // (7) Write a for-each loop. As a reminder, a for-each loop is a loop where you loop through
     // each element inside a data structure! Print out every element inside of array using a
     // for-each loop. HINT: Review notes. (5m)
     for (int element : array) {
-      System.out.println(array);
+      System.out.println(element);
     }
 
     // (8) Now write a normal for loop. Use i as your looping variable and add all the elements
@@ -89,7 +89,7 @@ public class FinalReview {
     // "average," and accept two integers. Return an integer too. Add the static modifier
     // to it. (3m)
 
-    // (15) Write a void method that computes the product of two doubles. Name this method
+    // (15) Write a double method that computes the product of two doubles. Name this method
     // "product," and accept two doubles. Return a double too. Add the static modifier to it. (3m)
 
     // (16) Let's write a Employee class.
